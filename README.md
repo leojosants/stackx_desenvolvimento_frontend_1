@@ -1,0 +1,2 @@
+# stackx_desenvolvimento_frontend_1
+Aplicações práticas
