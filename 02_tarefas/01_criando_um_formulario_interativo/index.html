@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Formulário</title>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body>
+		<div class="container">
+			<h1>Formulário de Cadastro</h1>
+			<form class="form" autocomplete="on">
+				<fieldset>
+					<legend>Dados pessoais</legend>
+					<p>
+						<label for="name">Nome</label><br />
+						<input
+							type="text"
+							name="name"
+							id="name"
+							minlength="3"
+							maxlength="10"
+							placeholder="Digite o nome"
+							required
+						/>
+					</p>
+					<p>
+						<label for="last_name">Sobrenome</label><br />
+						<input
+							type="text"
+							name="last_name"
+							id="last_name"
+							minlength="10"
+							maxlength="20"
+							placeholder="Digite o sobrenome"
+							required
+						/>
+					</p>
+					<fieldset id="fieldset_gender">
+						<legend id="legend_gender">Gênero</legend>
+						<input type="radio" name="gender" id="gender_m" checked />
+						<label for="gender_m" class="gender">Masculino</label><br />
+						<input
+							class="input_radio"
+							type="radio"
+							name="gender"
+							id="gender_f"
+						/>
+						<label for="gender_f" class="gender">Feminino</label>
+					</fieldset>
+					<br />
+					<fieldset id="fieldset_birth_date">
+						<legend>Data de Nascimento</legend>
+						<input
+							type="date"
+							name="birth_date"
+							id="birth_date"
+							required
+						/>
+					</fieldset>
+				</fieldset>
+				<br />
+				<fieldset>
+					<legend>Endereço</legend>
+					<p>
+						<label for="street">Rua</label><br />
+						<input
+							type="text"
+							id="street"
+							name="street"
+							placeholder="Digite a rua"
+							required
+						/>
+					</p>
+					<p>
+						<label for="residence_number">Número</label><br />
+						<input
+							type="number"
+							name="residence_number"
+							id="residence_number"
+							placeholder="Digite o número"
+							required
+						/>
+					</p>
+					<p>
+						<label for="neighborhood">Bairro</label><br />
+						<input
+							type="text"
+							name="neighborhood"
+							id="neighborhood"
+							placeholder="Digite o bairro"
+							required
+						/>
+					</p>
+					<p>
+						<label for="city">Cidade</label><br />
+						<input
+							type="text"
+							name="city"
+							id="city"
+							placeholder="Digite a cidade"
+							required
+						/>
+					</p>
+					<p>
+						<label for="state">Estado</label><br />
+						<input
+							type="text"
+							name="state"
+							id="state"
+							placeholder="Digite o estado"
+							required
+						/>
+					</p>
+					<p>
+						<label for="country">País</label><br />
+						<input
+							type="text"
+							name="country"
+							id="country"
+							placeholder="Digite o país"
+							required
+						/>
+					</p>
+				</fieldset>
+				<br />
+				<fieldset>
+					<legend>Contato</legend>
+					<p>
+						<label for="phone">Telefone</label><br />
+						<input
+							type="tel"
+							name="phone"
+							id="phone"
+							pattern="^\(\d{2}\)\d{4}-\d{4}$"
+							title="Digite o número conforme exemplo informado na caixa"
+							placeholder="(xx)xxxx-xxxx"
+						/>
+					</p>
+					<p>
+						<label for="cel_phone">Celular</label><br />
+						<input
+							type="tel"
+							name="cel_phone"
+							id="cel_phone"
+							pattern="^\(\d{2}\)\d{4,5}-\d{4}$"
+							placeholder="(xx)xxxxx-xxxx"
+							title="Digite o número conforme exemplo informado na caixa"
+							required
+						/>
+					</p>
+					<p>
+						<label for="email">E-mail</label><br />
+						<input
+							type="email"
+							name="email"
+							id="email"
+							placeholder="Digite o e-mail"
+							required
+						/>
+					</p>
+				</fieldset>
+
+				<div  class="button_container">
+					<button type="submit">Enviar</button>
+					<button type="reset">Limpar</button>
+				</div>
+			</form>
+		</div>
+	</body>
+</html>

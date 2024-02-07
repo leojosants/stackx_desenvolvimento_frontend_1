@@ -1,0 +1,108 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 2rem auto;
+    max-width: 80%;
+}
+
+.container h1 {
+    margin-bottom: 1em;
+}
+
+.form {
+    width: 100%;
+}
+
+fieldset {
+    background-color: #f5f5f553;
+    padding: 1em;
+    border: 1px solid rgba(0, 0, 0, 0.02);
+}
+
+legend {
+    font-weight: bold;
+    font-size: 1.1em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+#fieldset_gender, #fieldset_birth_date {
+    margin-top: 1em;
+    max-width: 250px;
+}
+
+#fieldset_gender label {
+    margin-left: 0;
+}
+
+#fieldset_birth_date {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+}
+
+#fieldset_birth_date #birth_date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+label {
+    font-weight: 500;
+    font-size: 1em;
+}
+
+.gender {
+    display: inline-block;
+    width: 90px;
+}
+
+p {
+    padding: 0.5em;
+}
+
+input {
+    margin-top: 0.5em;
+    border: none;
+    width: 30%;
+    border-radius: 5px;
+    padding: 0.5em;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.102);
+}
+
+.button_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+    margin-top: 1em;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40%;
+    padding: 0.5em;
+    border: none;
+    border-radius: 5px;
+    font-size: 1em;
+    transition: .4s;
+}
+
+button:hover {
+    background-color: rgba(0, 0, 0, 0.16);
+}
