@@ -22,11 +22,19 @@ nav i {
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    margin: 50px 0;
+    margin: 20px 0;
     text-align: center;
     color: #FCFCFC;
     font-family: 'Poppins', sans-serif; /* IMPORTAR */
     padding: 0 20px;
+}
+
+.section-about img {
+    border: 1px soli red;
+}
+
+.section-about div {
+    flex: 1;
 }
 
 .section-about h3 {
@@ -39,6 +47,7 @@ nav i {
 }
 
 .section-about h2 span,
+.skills-box h2 span,
 .cta-contatct {
     border-bottom: 2px solid #5FDDE5;
 }
@@ -51,4 +60,50 @@ nav i {
     color: #FFFFFF;
     font-weight: 600;
     text-decoration: none;
+}
+
+hr {
+    margin: 50px 20px;
+}
+
+.skills-box {
+    color: #FFFFFF;
+    text-align: left;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    margin: 20px 0;
+}
+
+.box i {
+    margin: 14px 10px;
+}
+
+.skills-box h2 {
+    font-size: 28px;
+    margin: 0 18px 35px;
+    text-transform: uppercase;
+}
+
+.box-text h3 {
+  font-size: 28px;
+}
+
+.box-text p {
+  font-size: 20px;
+  margin: 18px 0;
+  color: #B2B2B2;
+}
+
+@media screen and (max-width: 768px) {
+    img {
+        width: 70%;
+        height: auto;
+        order: -1;
+        margin: 0 0 20px;
+        border: 1px soli red;
+    }   
 }
