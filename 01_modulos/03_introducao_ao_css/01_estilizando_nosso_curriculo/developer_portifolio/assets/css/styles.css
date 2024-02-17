@@ -1,0 +1,54 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #151515;
+}
+
+header {
+    color: #FFFFFF;
+    text-align: center;
+    margin: 30px 0;
+    font-family: 'Young Serif', serif; /* IMPORTAR */
+}
+
+nav i {
+    color: #FCFCFC;
+    margin: 30px 20px;
+}
+
+.section-about {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 50px 0;
+    text-align: center;
+    color: #FCFCFC;
+    font-family: 'Poppins', sans-serif; /* IMPORTAR */
+    padding: 0 20px;
+}
+
+.section-about h3 {
+    font-size: 28px;
+}
+
+.section-about h2 {
+    font-size: 28px;
+    margin: 0 0 20px;
+}
+
+.section-about h2 span,
+.cta-contatct {
+    border-bottom: 2px solid #5FDDE5;
+}
+
+.section-about p {
+    margin: 15px 0;
+}
+
+.cta-contatct {
+    color: #FFFFFF;
+    font-weight: 600;
+    text-decoration: none;
+}
