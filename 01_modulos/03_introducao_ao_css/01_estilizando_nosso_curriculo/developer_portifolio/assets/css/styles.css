@@ -174,7 +174,7 @@ hr {
 
 .contact {
     background-color: var(--color_242424) !important;
-    padding: 35px 20px 80px;
+    padding: 35px 20px 30%;
     text-align: center;
     color: var(--color_FFFFFF);
 }
@@ -209,6 +209,8 @@ button.cta-contact {
     border: none;
     border-bottom: 2px solid var(--color_5FDDE5);
     float: right;
+    cursor: pointer;
+    margin: 20px;
 }
 
 footer {
@@ -242,15 +244,18 @@ header nav a i:hover {
 
 /* desktop */
 @media screen and (min-width: 1024px) { 
-    body {
+    header, 
+    .section-about, 
+    .skills-box,
+    .section-project,
+    .contact-container {
         max-width: 1000px;
         margin: 0 auto;
     }
 
     header {
         display: flex;
-        justify-content: space-around;
-        padding: 0 20px;
+        justify-content: space-between;
         align-items: center;
     }
 
@@ -277,18 +282,55 @@ header nav a i:hover {
     }
 
     .section-about img {
-        width: 40%;
-        height: auto;
         position: relative;
         top: -80px;
     }
 
     hr {
-        margin: 30px 20px;
+        margin: 30px 5%;
     }
 
     .skills-box-one {
         display: flex;
+        justify-content: space-between;
+    }
+
+    .two-box-projects {
+        display: flex;
         justify-content: space-around;
+    }
+    
+    .box-projects img {
+        width: 450px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    .box-projects-text {
+        text-align: center;
+        margin: 20px 20px;
+        width: 100%;
+    }
+
+    .contact-container {
+        padding: 50px 0;
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .contact {
+        text-align: left;
+        color: var(--color_FFFFFF);
+        padding: 35px 20px;
+    }
+
+    .contact p {
+        color: var(--color_ACACAC);
+        font-size: 16px;
+        margin: 0 0 20px;
+    }
+
+    form {
+        width: 40%;
     }
 }
