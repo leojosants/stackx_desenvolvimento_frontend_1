@@ -169,7 +169,7 @@ hr {
 
 .contact {
     background-color: var(--color_242424) !important;
-    padding: 35px 20px;
+    padding: 35px 20px 80px;
     text-align: center;
     color: var(--color_FFFFFF);
 }
@@ -178,6 +178,48 @@ hr {
     color: var(--color_ACACAC);
     font-size: 16px;
     margin: 0 0 20px;
+}
+
+.contact input {
+    width: 95%;
+    padding: 10px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--color_FFFFFF);
+    margin: 10px 0;
+    color: var(--color_FFFFFF);
+    font-size: 16px;
+}
+
+.contact input::placeholder {
+    text-transform: uppercase;
+}
+
+textarea:focus, input:focus, select:focus {
+    outline: none;
+}
+
+button.cta-contact {
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--color_5FDDE5);
+    float: right;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0 40px;
+    color: var(--color_FFFFFF);
+}
+
+footer nav a i,
+header nav a i {
+    transition: .4s;
+}
+
+footer nav a i:hover,
+header nav a i:hover {
+    color: var(--color_5FDDE5);
 }
 
 @media screen and (max-width: 768px) {
