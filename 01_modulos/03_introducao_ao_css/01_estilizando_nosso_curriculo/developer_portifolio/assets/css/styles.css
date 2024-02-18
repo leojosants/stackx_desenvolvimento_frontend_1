@@ -19,7 +19,6 @@
 }
 
 body {
-    background-color: #151515;
     background-color: var(--color_151515);
 }
 
@@ -85,7 +84,7 @@ nav i {
 .cta-contact:hover {
     color: var(--color_C6C6C6);
     transform: scale(1.1);
-    transition: all 0.6s;
+    transition: all 0.2s;
 }
 
 hr {
