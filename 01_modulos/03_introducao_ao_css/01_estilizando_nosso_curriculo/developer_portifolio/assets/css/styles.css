@@ -23,6 +23,10 @@ body {
     background-color: var(--color_151515);
 }
 
+a {
+    text-decoration: none;
+}
+
 header {
     color: var(--color_FFFFFF);
     text-align: center;
@@ -107,8 +111,8 @@ hr {
 
 .skills-box h2 {
     font-size: var(--font_28px);
-    margin: 0 18px 35px;
     text-transform: uppercase;
+    margin: 0 5px 40px;
 }
 
 .box-text h3 {
@@ -125,7 +129,7 @@ hr {
 .box-projects-links {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px 40px;
+    margin: 0 20px 35px;
     align-items: center;
 }
 
@@ -133,6 +137,10 @@ hr {
     color: var(--color_FFFFFF);
     font-size: var(--font_28px);
     text-transform: uppercase;
+}
+
+.box-projects {
+    text-align: center;
 }
 
 .box-projects img {
