@@ -18,6 +18,8 @@
     --font_28px: 28px;
 }
 
+/* mobile */
+
 body {
     background-color: var(--color_151515);
 }
@@ -48,10 +50,6 @@ nav i {
     padding: 0 20px;
 }
 
-.section-about div {
-    flex: 1;
-}
-
 .section-about h3 {
     font-size: var(--font_28px);
 }
@@ -72,6 +70,13 @@ nav i {
 
 .section-about p {
     margin: 15px 0;
+}
+
+.section-about img {
+    width: 40%;
+    height: auto;
+    border-radius: 3px; 
+    opacity: 0.7;
 }
 
 .cta-contact {
@@ -229,4 +234,61 @@ header nav a i:hover {
         order: -1;
         margin: 0 0 20px;
     }   
+
+    .section-about div {
+        flex: 1;
+    }
+}
+
+/* desktop */
+@media screen and (min-width: 1024px) { 
+    body {
+        max-width: 1000px;
+        margin: 0 auto;
+    }
+
+    header {
+        display: flex;
+        justify-content: space-around;
+        padding: 0 20px;
+        align-items: center;
+    }
+
+    nav {
+        z-index: 10;
+    }
+
+    .section-about {
+        justify-content: space-between;
+        flex-direction: row;
+        position: relative;
+    }
+    
+    .section-about-box {
+        text-align: left;
+    }
+
+    .section-about h3 {
+        font-size: 40px;
+    }
+
+    .section-about h2 {
+        font-size: 50px;
+    }
+
+    .section-about img {
+        width: 40%;
+        height: auto;
+        position: relative;
+        top: -80px;
+    }
+
+    hr {
+        margin: 30px 20px;
+    }
+
+    .skills-box-one {
+        display: flex;
+        justify-content: space-around;
+    }
 }
