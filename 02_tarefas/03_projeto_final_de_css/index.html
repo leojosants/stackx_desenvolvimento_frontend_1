@@ -18,17 +18,20 @@
 			href="./assets/images/favicon.png"
 			type="image/x-icon"
 		/>
+		<!-- fonts -->
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
 			rel="stylesheet"
 		/>
+		<!-- styles -->
 		<link rel="stylesheet" href="assets/css/styles.css" />
+
 		<title>Leonardo Santos' portfolio</title>
 	</head>
-	<body>
-		<header>
+	<body class="c-body">
+		<header class="c-body__header">
 			<h1>leonardosantos</h1>
 			<nav>
 				<a
@@ -69,8 +72,8 @@
 			</nav>
 		</header>
 
-		<section class="section-about">
-			<div class="section-about-box">
+		<section class="c-body__section-about">
+			<div class="c-section-about__box">
 				<h3>Nice to meet you!</h3>
 
 				<h2>I'm <span>Leonardo Santos</span>.</h2>
@@ -81,7 +84,7 @@
 				</p>
 
 				<a
-					class="cta-contact"
+					class="c-body__emphasis"
 					href="https://wa.me/5532999447711"
 					target="_blank"
 					rel="external"
@@ -92,57 +95,57 @@
 			<img src="https://github.com/leojosants.png" alt="Profile picture" />
 		</section>
 
-		<hr />
+		<hr class="c-body__hr" />
 
-		<section class="skills-box">
+		<section class="c-body__section-skills">
 			<h2><span>SKILLS</span></h2>
 
-			<div class="skills-box-one">
-				<div class="box">
+			<div class="c-section-skills__box-one">
+				<div class="c-section-skills__box">
 					<i class="fa-brands fa-lg fa-html5"></i>
-					<div class="box-text">
+					<div class="c-section-skills__text">
 						<h3>HTML5</h3>
 						<p>1 year of knowledge</p>
 					</div>
 				</div>
 
-				<div class="box">
+				<div class="c-section-skills__box">
 					<i class="fa-brands fa-lg fa-css3-alt"></i>
-					<div class="box-text">
+					<div class="c-section-skills__text">
 						<h3>CSS3</h3>
 						<p>1 year of knowledge</p>
 					</div>
 				</div>
 
-				<div class="box">
+				<div class="c-section-skills__box">
 					<i class="fa-brands fa-lg fa-js"></i>
-					<div class="box-text">
+					<div class="c-section-skills__text">
 						<h3>JavaScript</h3>
 						<p>1 year of knowledge</p>
 					</div>
 				</div>
 			</div>
 
-			<div class="skills-box-one">
-				<div class="box">
+			<div class="c-section-skills__box-one">
+				<div class="c-section-skills__box">
 					<i class="fa-brands fa-lg fa-react"></i>
-					<div class="box-text">
+					<div class="c-section-skills__text">
 						<h3>React</h3>
 						<p>1 year of knowledge</p>
 					</div>
 				</div>
 
-				<div class="box">
+				<div class="c-section-skills__box">
 					<i class="fa-brands fa-sass"></i>
-					<div class="box-text">
+					<div class="c-section-skills__text">
 						<h3>Sass</h3>
 						<p>1 year of knowledge</p>
 					</div>
 				</div>
 
-				<div class="box">
+				<div class="c-section-skills__box">
 					<i class="fa-solid fa-lg fa-database"></i>
-					<div class="box-text">
+					<div class="c-section-skills__text">
 						<h3>Database</h3>
 						<p>1 year of knowledge</p>
 					</div>
@@ -150,44 +153,45 @@
 			</div>
 		</section>
 
-		<hr />
+		<hr class="c-body__hr" />
 
-		<section class="section-project">
-			<div class="projects">
+		<section class="c-body__section-projects">
+			<div class="c-section-projects__heading">
 				<h2><span>Projects</span></h2>
 				<a
 					href="https://wa.me/5532999447711"
-					class="cta-contact"
+					class="c-body__emphasis"
 					target="_blank"
 					rel="external"
 					>CONTACT ME</a
 				>
 			</div>
 
-			<div class="two-box-projects">
-				<div class="box-projects">
+			<div class="c-section-projects__two-projects">
+				<div class="c-section-projects__box">
 					<img src="./assets/images/blog.png" alt="Project image" />
 
-					<div class="box-projects-text">
+					<div class="c-section-projects__text">
 						<h4>BLOG</h4>
 						<span>HTML5</span>
 						<span>CSS3</span>
 						<span>JAVASCRIPT</span>
 					</div>
 
-					<div class="box-projects-links">
+					<div class="c-section-projects__link">
 						<a
+							class="c-body__emphasis"
 							href="https://leojosants.github.io/stackxlab_projeto_blog/index.html"
 							title="https://leojosants.github.io/stackxlab_projeto_blog/index.html"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW PROJECT</a
 						>
+
 						<a
+							class="c-body__emphasis"
 							href="https://github.com/leojosants/stackxlab_projeto_blog"
 							title="https://github.com/leojosants/stackxlab_projeto_blog"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW CODE</a
@@ -195,29 +199,29 @@
 					</div>
 				</div>
 
-				<div class="box-projects">
+				<div class="c-section-projects__box">
 					<img src="./assets/images/todo_list.png" alt="Project image" />
 
-					<div class="box-projects-text">
+					<div class="c-section-projects__text">
 						<h4>TODO LIST</h4>
 						<span>HTML5</span>
 						<span>CSS3</span>
 						<span>JAVASCRIPT</span>
 					</div>
 
-					<div class="box-projects-links">
+					<div class="c-section-projects__link">
 						<a
+							class="c-body__emphasis"
 							href="https://leojosants.github.io/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_20/todo_list_avancado/"
 							title="https://leojosants.github.io/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_20/todo_list_avancado/"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW PROJECT</a
 						>
 						<a
+							class="c-body__emphasis"
 							href="https://github.com/leojosants/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_20"
 							title="https://github.com/leojosants/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_20"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW CODE</a
@@ -226,30 +230,31 @@
 				</div>
 			</div>
 
-			<div class="two-box-projects">
-				<div class="box-projects">
+			<div class="c-section-projects__two-projects">
+				<div class="c-section-projects__box">
 					<img src="./assets/images/pokeapi.png" alt="Project image" />
 
-					<div class="box-projects-text">
+					<div class="c-section-projects__text">
 						<h4>POKEDEX</h4>
 						<span>HTML5</span>
 						<span>CSS3</span>
 						<span>JAVASCRIPT</span>
 					</div>
 
-					<div class="box-projects-links">
+					<div class="c-section-projects__link">
 						<a
+							class="c-body__emphasis"
 							href="https://leojosants.github.io/stackxlab_projeto_pokeapi/index.html"
 							title="https://leojosants.github.io/stackxlab_projeto_pokeapi/index.html"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW PROJECT</a
 						>
+
 						<a
+							class="c-body__emphasis"
 							href="https://github.com/leojosants/stackxlab_projeto_pokeapi"
 							title="https://github.com/leojosants/stackxlab_projeto_pokeapi"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW CODE</a
@@ -257,32 +262,33 @@
 					</div>
 				</div>
 
-				<div class="box-projects">
+				<div class="c-section-projects__box">
 					<img
 						src="./assets/images/unit_converter.png"
 						alt="Project image"
 					/>
 
-					<div class="box-projects-text">
+					<div class="c-section-projects__text">
 						<h4>CONVERTER</h4>
 						<span>HTML5</span>
 						<span>CSS3</span>
 						<span>JAVASCRIPT</span>
 					</div>
 
-					<div class="box-projects-links">
+					<div class="c-section-projects__link">
 						<a
+							class="c-body__emphasis"
 							href="https://leojosants.github.io/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_02/conversor_de_unidades/"
 							title="https://leojosants.github.io/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_02/conversor_de_unidades/"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW PROJECT</a
 						>
+
 						<a
+							class="c-body__emphasis"
 							href="https://github.com/leojosants/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_02/tree/main"
 							title="https://github.com/leojosants/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_02/tree/main"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW CODE</a
@@ -291,33 +297,34 @@
 				</div>
 			</div>
 
-			<div class="two-box-projects">
-				<div class="box-projects">
+			<div class="c-section-projects__two-projects">
+				<div class="c-section-projects__box">
 					<img
 						src="./assets/images/json_csv_converter.png"
 						alt="Project image"
 					/>
 
-					<div class="box-projects-text">
+					<div class="c-section-projects__text">
 						<h4>CONVERTER</h4>
 						<span>HTML5</span>
 						<span>CSS3</span>
 						<span>JAVASCRIPT</span>
 					</div>
 
-					<div class="box-projects-links">
+					<div class="c-section-projects__link">
 						<a
+							class="c-body__emphasis"
 							href="https://leojosants.github.io/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_13/conversor_de_json_para_csv/"
 							title="https://leojosants.github.io/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_13/conversor_de_json_para_csv/"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW PROJECT</a
 						>
+
 						<a
+							class="c-body__emphasis"
 							href="https://github.com/leojosants/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_13"
 							title="https://github.com/leojosants/udemy_projetos_de_javascript_aprenda_html_css_e_javascript__secao_13"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW CODE</a
@@ -325,32 +332,33 @@
 					</div>
 				</div>
 
-				<div class="box-projects">
+				<div class="c-section-projects__box">
 					<img
 						src="./assets/images/responsivity_on_screen.png"
 						alt="Project image"
 					/>
 
-					<div class="box-projects-text">
+					<div class="c-section-projects__text">
 						<h4>RESPONSIVITY</h4>
 						<span>HTML5</span>
 						<span>CSS3</span>
 						<span>JAVASCRIPT</span>
 					</div>
 
-					<div class="box-projects-links">
+					<div class="c-section-projects__link">
 						<a
+							class="c-body__emphasis"
 							href="https://leojosants.github.io/curso_em_video_projeto_tela_de_login_responsiva/"
 							title="https://leojosants.github.io/curso_em_video_projeto_tela_de_login_responsiva/"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW PROJECT</a
 						>
+
 						<a
+							class="c-body__emphasis"
 							href="https://github.com/leojosants/curso_em_video_projeto_tela_de_login_responsiva"
 							title="https://github.com/leojosants/curso_em_video_projeto_tela_de_login_responsiva"
-							class="cta-contact"
 							target="_blank"
 							rel="external"
 							>VIEW CODE</a
@@ -360,8 +368,8 @@
 			</div>
 		</section>
 
-		<section class="contact">
-			<div class="contact-container">
+		<section class="c-body__section-contact">
+			<div class="c-section-contact__container">
 				<div>
 					<h2><span>CONTACT</span></h2>
 					<p>
@@ -372,7 +380,7 @@
 					</p>
 				</div>
 
-				<form action="success_page.html">
+				<form class="c-section-contact__form" action="success_page.html">
 					<input
 						type="text"
 						name="name"
@@ -403,15 +411,18 @@
 
 					<br />
 
-					<button type="submit" class="cta-contact">SEND MESSAGE</button>
+					<button type="submit" class="c-body__emphasis">
+						SEND MESSAGE
+					</button>
 				</form>
 			</div>
 		</section>
 
-		<hr />
+		<hr class="c-body__hr" />
 
-		<footer>
+		<footer class="c-body__footer">
 			<h1>leonardosantos</h1>
+
 			<nav>
 				<a
 					href="https://github.com/leojosants"
