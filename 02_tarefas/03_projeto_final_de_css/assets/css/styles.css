@@ -30,10 +30,6 @@
     background-color: var(--color-151515);
 }
 
-textarea:focus, input:focus, select:focus {
-    outline: none;
-}
-
 a {
     text-decoration: var(--text-decoration-none);
 }
@@ -96,7 +92,7 @@ nav i {
     padding: 15px 0;
 }
 
-.c-body__emphasis:hover {
+.c-body__emphasis--hover:hover {
     color: var(--color-C6C6C6);
     transform: scale(1.1);
     transition: all 0.2s;
@@ -143,7 +139,7 @@ nav i {
 .c-section-projects__link {
     display: flex;
     justify-content: space-between;
-    margin: 0 20px 35px;
+    margin: 10px 18px 35px 18px;
     align-items: center;
 }
 
@@ -166,8 +162,21 @@ nav i {
 }
 
 .c-section-projects__text {
-    text-align: left;
-    margin: 20px 20px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin: 5px;
+}
+
+.c-section-projects__text div {
+    display: flex; 
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.c-section-projects__text div span {
+    margin: 0 auto;
+    padding: 10px;
 }
 
 .c-section-projects__text h4 {
@@ -184,7 +193,7 @@ nav i {
 
 .c-body__section-contact {
     background-color: var(--color-242424) !important;
-    padding: 35px 20px 30%;
+    padding: 35px 20px 20%;
     text-align: center;
     color: var(--color-FFFFFF);
 }
@@ -193,6 +202,11 @@ nav i {
     color: var(--color-ACACAC);
     font-size: 16px;
     margin: 0 0 20px;
+    padding: 30px;
+}
+
+.c-section-contact__input--focus:focus {
+    outline: none;
 }
 
 .c-body__section-contact input {
@@ -206,7 +220,7 @@ nav i {
     font-size: 16px;
 }
 
-.c-body__section-contact input::placeholder {
+.c-body__section-contact__input--placeholder input::placeholder {
     text-transform: var(--text-transform-uppercase);
 }
 
@@ -244,7 +258,7 @@ button.c-body__emphasis {
     color: var(--color-FFFFFF);
 }
 
-.c-body__main {
+.c-success-page__main {
     max-width: 80%;
     height: auto;
     padding: 10px;
@@ -256,20 +270,20 @@ button.c-body__emphasis {
     border: 1px solid var(--color-5fdce541);
 }
 
-.c-body__main h1 {
+.c-success-page__main h1 {
     font-size: 40px;
     padding: 20px;
     text-align: center;
 }
 
-.c-body__main h2 {
+.c-success-page__main h2 {
     font-size: 20px;
     padding: 20px;
     margin: 5px;
     text-align: center;
 }
 
-.c-body__main a {
+.c-success-page__main a {
     font-size: 15px;
     margin: 20px;
     padding: 10px 25px;
@@ -277,13 +291,13 @@ button.c-body__emphasis {
     border-radius: 5px;
     text-decoration: none;
     border: 1px solid transparent;
-    border-bottom-color: 1px solid var(--color-5FDDE5);
-    border-right-color: 1px solid var(--color-5FDDE5);
+    border-bottom-color: 1px solid var(--color-5fdce541);
+    border-right-color: 1px solid var(--color-5fdce541);
     transition: .6s;
 }
 
-.c-body__main a:hover { 
-    color: var(--color-FFFFFF);
+.c-success-page__a--hover:hover { 
+    color: var(--color-5FDDE5);
     border: 1px solid transparent;
     border-top-color: 1px solid var(--color-5FDDE5);
     border-left-color: 1px solid var(--color-5FDDE5);
@@ -308,6 +322,7 @@ button.c-body__emphasis {
 @media screen and (min-width: 1024px) { 
     nav {
         z-index: 10;
+        margin-left: 480px;
     }
 
     .c-body__header, 
@@ -321,10 +336,9 @@ button.c-body__emphasis {
 
     .c-body__header {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         align-items: center;
     }
-
 
     .c-body__section-about {
         justify-content: space-between;
@@ -355,7 +369,12 @@ button.c-body__emphasis {
 
     .c-section-skills__box-one {
         display: flex;
-        justify-content: space-between;
+        justify-content: space-evenly;
+    }
+
+    .c-section-projects__heading,
+    .c-section-projects__link {
+        margin: 10px 18px 35px 18px;
     }
 
     .c-section-projects__two-projects {
@@ -373,10 +392,12 @@ button.c-body__emphasis {
         text-align: center;
         margin: 20px 20px;
         width: 100%;
+        display: flex;
+        flex-direction: column;
     }
 
     .c-section-contact__container {
-        padding: 50px 0;
+        padding: 10px 0;
         display: flex;
         justify-content: space-around;
     }
@@ -395,5 +416,9 @@ button.c-body__emphasis {
 
     .c-section-contact__form {
         width: 40%;
+    }
+
+    .c-body__footer nav {
+        margin-left: 0;
     }
 }
