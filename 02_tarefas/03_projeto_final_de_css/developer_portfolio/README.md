@@ -17,7 +17,10 @@
 - Validação de entrada de dados do fomulário:
   - [x] Campos obrigatórios;
   - [x] Formato padrão de e-mail;
-  - [x] Aplicado metodologia BEM CSS;
+  - [x] Recebimentos dos dados utilizando Google Sheets;
+
+- ´Boas práticas de escrita de código em CSS:
+  - [x] Aplicado metodologia BEM (Block Element Modifier);
 
 ## Tecnologias
 
