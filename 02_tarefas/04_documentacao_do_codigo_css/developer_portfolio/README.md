@@ -1,6 +1,6 @@
 <a id="top"></a>
 
-# Módulo Desenvolvimento Fron.end [StackX](https://www.stackx.com.br)
+# Módulo Desenvolvimento Front-end [StackX](https://www.stackx.com.br)
 
 ## Tarefa - Documentação do código CSS
 
@@ -14,7 +14,7 @@
 
 ## Legenda
 
-[1. Resetar valores padrão do browser.](#1)
+1. Resetar valores padrão do browser
 
 2. Definir variáveis globais.
 
@@ -102,7 +102,7 @@
 
 ## Arquivo CSS
 
-<a id="1" title="Resetar valores padrão do browser">1</a>
+<h3 title="Resetar valores padrão do browser">1</h3>
 
 ```css
 * {
@@ -113,7 +113,7 @@
 }
 ```
 
-<a type="button" title="Definir variáveis globais">2</a>
+<h3 title="Definir variáveis globais">2</h3>
 
 ```css
 :root {
@@ -138,7 +138,7 @@
 
 ## --> Mobile First <--
 
-<button type="button" title="Definir variáveis globais">3</button>
+<h3 title="Definir cor de fundo do corpo do documento">3</h3>
 
 ```css
 .c-body,
@@ -147,7 +147,7 @@
 }
 ```
 
-<button type="button" title="Retirar sublinhado do elemento">4</button>
+<h3 title="Retirar sublinhado do elemento">4</h3>
 
 ```css
 a {
@@ -155,7 +155,7 @@ a {
 }
 ```
 
-<button type="button" title="Definir cor e margem do elemento">5</button>
+<h3 title="Definir cor e margem do elemento">5</h3>
 
 ```css
 nav i {
@@ -173,7 +173,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir cor da fonte, alinhamento e margem">6</button>
+<h3 title="Definir cor da fonte, alinhamento e margem">6</h3>
 
 ```css
 .c-body__header {
@@ -192,7 +192,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir cor da fonte, alinhamento, direcionamento, espaçamento e margem.do elemento">7</button>
+<h3 title="Definir cor da fonte, alinhamento, direcionamento, espaçamento e margem.do elemento">7</h3>
 
 ```css
 .c-body__section-about {
@@ -209,7 +209,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir tamanho da fonte.do elemento">8</button>
+<h3 title="Definir tamanho da fonte.do elemento">8</h3>
 
 ```css
 .c-body__section-about h3 {
@@ -229,7 +229,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir borda do elemento">9</button>
+<h3 title="Definir borda do elemento">9</h3>
 
 ```css
 .c-body__section-about h2 span,
@@ -241,7 +241,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir margem do elemento">10</button>
+<h3 title="Definir margem do elemento">10</h3>
 
 ```css
 .c-body__section-about p {
@@ -283,7 +283,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir largura, altura, borda e opacidade do elemento">11</button>
+<h3 title="Definir largura, altura, borda e opacidade do elemento">11</h3>
 
 ```css
 .c-body__section-about img {
@@ -294,7 +294,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir cor, peso, espaçamento e retirar sublinhado do elemento">12</button>
+<h3 title="Definir cor, peso, espaçamento e retirar sublinhado do elemento">12</h3>
 
 ```css
 .c-body__emphasis {
@@ -306,7 +306,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir efeito ao passar o mouse alterando cor, borda e tamanho do elemento">13</button>
+<h3 title="Definir efeito ao passar o mouse alterando cor, borda e tamanho do elemento">13</h3>
 
 ```css
 .c-body__emphasis--hover:hover {
@@ -317,7 +317,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir alinhamento e margem do elemento">14</button>
+<h3 title="Definir alinhamento e margem do elemento">14</h3>
 
 ```css
 .c-section-skills__box {
@@ -351,7 +351,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir tamanho, margem e transformar fonte para letras maiúsculas do elemento">15</button>
+<h3 title="Definir tamanho, margem e transformar fonte para letras maiúsculas do elemento">15</h3>
 
 ```css
 .c-body__section-skills h2 {
@@ -365,7 +365,7 @@ nav i {
 
 ```
 
-<button type="button" title="Definir cor, tamanho e margem do elemento">16</button>
+<h3 title="Definir cor, tamanho e margem do elemento">16</h3>
 
 ```css
 .c-section-skills__text p {
@@ -394,7 +394,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir cor, tamanho e transformar fonte para letras  maiúsculas do elemento">17</button>
+<h3 title="Definir cor, tamanho e transformar fonte para letras  maiúsculas do elemento">17</h3>
 
 ```css
 .c-section-projects__heading h2 {
@@ -404,7 +404,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir alinhamento do elemento">18</button>
+<h3 title="Definir alinhamento do elemento">18</h3>
 
 ```css
 .c-section-projects__box {
@@ -438,7 +438,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir largura, altura, margem e ordenação do elemento">19</button>
+<h3 title="Definir largura, altura, margem e ordenação do elemento">19</h3>
 
 ```css
 .c-section-projects__box img {
@@ -452,7 +452,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir alinhamento e espaçamentodo elemento">20</button>
+<h3 title="Definir alinhamento e espaçamentodo elemento">20</h3>
 
 ```css
 .c-section-projects__text div span {
@@ -471,7 +471,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir cor de fundo e da fonte, espaçamento e alinhamento do elemento">21</button>
+<h3 title="Definir cor de fundo e da fonte, espaçamento e alinhamento do elemento">21</h3>
 
 ```css
 .c-body__section-contact {
@@ -485,7 +485,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir cor e tamanho da fonte,  margem e espaçamento do elemento">22</button>
+<h3 title="Definir cor e tamanho da fonte,  margem e espaçamento do elemento">22</h3>
 
 ```css
 .c-body__section-contact p {
@@ -500,7 +500,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Retirar bordas ao clicar no elemento">23</button>
+<h3 title="Retirar bordas ao clicar no elemento">23</h3>
 
 ```css
 .c-section-contact__input--focus:focus {
@@ -508,7 +508,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir borda, cor da fonte, largura, espaçamento, cor de fundo, margem e tamanho da fonte do elemento">24</button>
+<h3 title="Definir borda, cor da fonte, largura, espaçamento, cor de fundo, margem e tamanho da fonte do elemento">24</h3>
 
 ```css
 .c-body__section-contact input {
@@ -527,7 +527,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Transformar fonte para letras maiúsculas do elemento">25</button>
+<h3 title="Transformar fonte para letras maiúsculas do elemento">25</h3>
 
 ```css
 .c-body__section-contact__input--placeholder input::placeholder {
@@ -535,7 +535,7 @@ nav i {
 }
 ```
 
-<button type="button" title="Definir cor de fundo, borda, posicionamento, tipo de cursor e margem do elemento">26</button>
+<h3 title="Definir cor de fundo, borda, posicionamento, tipo de cursor e margem do elemento">26</h3>
 
 ```css
 button.c-body__emphasis {
@@ -548,7 +548,7 @@ button.c-body__emphasis {
 }
 ```
 
-<button type="button" title="Definir cor e tamanho da fonte, alinhamento e espaçamento do elemento">27</button>
+<h3 title="Definir cor e tamanho da fonte, alinhamento e espaçamento do elemento">27</h3>
 
 ```css
 .c-body__footer {
@@ -568,7 +568,7 @@ button.c-body__emphasis {
 }
 ```
 
-<button type="button" title="Definir transição ao passar o mouse do elemento">28</button>
+<h3 title="Definir transição ao passar o mouse do elemento">28</h3>
 
 ```css
 .c-body__footer nav a i,
@@ -577,7 +577,7 @@ button.c-body__emphasis {
 }
 ```
 
-<button type="button" title="Definir cor da fonte do elemento">29</button>
+<h3 title="Definir cor da fonte do elemento">29</h3>
 
 ```css
 .c-body__footer nav a i:hover,
@@ -586,8 +586,7 @@ button.c-body__emphasis {
 }
 ```
 
-<button type="button" title="Definir cor da fonte, largura, altura e alinhamento do elemento
-">30</button>
+<h3 title="Definir cor da fonte, largura, altura e alinhamento do elemento">30</h3>
 
 ```css
 .c-body__success-page {
@@ -600,7 +599,7 @@ button.c-body__emphasis {
 }
 ```
 
-<button type="button" title="Definir largura máxima, altura, alinhamento, direcionamento, espaçamento e borda do elemento">31</button>
+<h3 title="Definir largura máxima, altura, alinhamento, direcionamento, espaçamento e borda do elemento">31</h3>
 
 ```css
 .c-success-page__main {
@@ -619,7 +618,7 @@ button.c-body__emphasis {
 }
 ```
 
-<button type="button" title="Definir tamanho da fonte, espaçamento, margem e alinhamentodo elemento">32</button>
+<h3 title="Definir tamanho da fonte, espaçamento, margem e alinhamentodo elemento">32</h3>
 
 ```css
 .c-success-page__main h2 {
@@ -636,7 +635,7 @@ button.c-body__emphasis {
 }
 ```
 
-<button type="button" title="Definir cor, largura, margem, espaçamento, borda, transição ao passar o mouse e retirar sublinhado do elemento">33</button>
+<h3 title="Definir cor, largura, margem, espaçamento, borda, transição ao passar o mouse e retirar sublinhado do elemento">33</h3>
 
 ```css
 .c-success-page__main a {
@@ -659,7 +658,7 @@ button.c-body__emphasis {
 }
 ```
 
-<button type="button" title="Definir cor da fonte, borda e efeito ao passar o mouse do elemento">34</button>
+<h3 title="Definir cor da fonte, borda e efeito ao passar o mouse do elemento">34</h3>
 
 ```css
 .c-success-page__a--hover:hover { 
@@ -673,7 +672,7 @@ button.c-body__emphasis {
 
 ## --> Tablet Screen <--
 
- <button type="button" title="Definir largura, altura, margem e ordenação do elemento">19</button>
+ <h3 title="Definir largura, altura, margem e ordenação do elemento">19</h3>
 
 ```css
 img {
@@ -684,7 +683,7 @@ img {
 }   
 ```  
 
-<button type="button" title="Definir todo preenchimento possível do elemento">35</button>
+<h3 title="Definir todo preenchimento possível do elemento">35</h3>
 
 ```css
 .c-body__section-about div {
@@ -694,7 +693,7 @@ img {
 
 ## --> Desktop Screen <--
 
-<button type="button" title="Definir sobreposição e margem do elemento">36</button>
+<h3 title="Definir sobreposição e margem do elemento">36</h3>
 
 ```css
 nav {
@@ -703,7 +702,7 @@ nav {
 }
 ```
 
-<button type="button" title="Definir largura máxima e margem do elemento">37</button>
+<h3 title="Definir largura máxima e margem do elemento">37</h3>
 
 ```css
 .c-body__header, 
@@ -719,7 +718,7 @@ nav {
 }
 ```
 
-<button type="button" title="Definir alinhamento, direcionamento e posicionamento do elemento">38</button>
+<h3 title="Definir alinhamento, direcionamento e posicionamento do elemento">38</h3>
 
 ```css
 .c-body__section-about {
@@ -729,7 +728,7 @@ nav {
 }
 ```
 
-<button type="button" title="Definir posicionamento do elemento">39</button>
+<h3 title="Definir posicionamento do elemento">39</h3>
 
 ```css
 .c-body__section-about img {
@@ -738,7 +737,7 @@ nav {
 }
 ```
 
-<button type="button" title="Definir largura, altura e margem do elemento">40</button>
+<h3 title="Definir largura, altura e margem do elemento">40</h3>
 
 ```css
 .c-section-projects__box img {
@@ -751,7 +750,7 @@ nav {
 }
 ```
 
-<button type="button" title="Definir largura, alinhamento, direcionamento e margem do elemento">41</button>
+<h3 title="Definir largura, alinhamento, direcionamento e margem do elemento">41</h3>
 
 ```css
 .c-section-projects__text {
@@ -766,7 +765,7 @@ nav {
 }
 ```
 
-<button type="button" title="Definir cor da fonte, alinhamento e espaçamento do elemento">42</button>
+<h3 title="Definir cor da fonte, alinhamento e espaçamento do elemento">42</h3>
 
 ```css
 .c-body__section-contact {
@@ -779,7 +778,7 @@ nav {
 }
 ```
 
-<button type="button" title="Definir largura do elemento">43</button>
+<h3 title="Definir largura do elemento">43</h3>
 
 ```css
 .c-section-contact__form {
