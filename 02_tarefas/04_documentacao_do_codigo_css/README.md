@@ -10,7 +10,9 @@
 
 ## Minha proposta
 
-- Comentário explicativo em forma de legenda onde cada número representa a definição do trecho de código do [arquivo css](https://leojosants.github.io/stackx_desenvolvimento_frontend_1/02_tarefas/04_documentacao_do_codigo_css/developer_portfolio/assets/css/styles.css).
+- Proposta de documentação do projeto [Developer Portfolio](https://leojosants.github.io/stackx_desenvolvimento_frontend_1/02_tarefas/03_projeto_final_de_css/developer_portfolio/).
+
+- Comentário explicativo em forma de legenda onde cada número representa a definição do trecho correspondente ao código do [arquivo css](https://leojosants.github.io/stackx_desenvolvimento_frontend_1/02_tarefas/04_documentacao_do_codigo_css/developer_portfolio/assets/css/styles.css).
 
 ## Legenda
 
@@ -26,9 +28,9 @@
 
 6. Definir cor da fonte, alinhamento e margem.
 
-7. Definir cor da fonte, alinhamento, direcionamento, espaçamento e margem.do elemento.
+7. Definir cor da fonte, alinhamento, direcionamento, espaçamento e margem do elemento.
 
-8. Definir tamanho da fonte.do elemento.
+8. Definir tamanho da fonte do elemento.
 
 9. Definir borda do elemento.
 
@@ -785,4 +787,5 @@ nav {
   width: 40%;
 }
 ```
+
 [topo](#top)
