@@ -14,7 +14,7 @@
 
 ## Legenda
 
-1. Resetar valores padrão do browser.
+[1. Resetar valores padrão do browser.](#1)
 
 2. Definir variáveis globais.
 
@@ -102,7 +102,7 @@
 
 ## Arquivo CSS
 
-<button type="button" title="Resetar valores padrão do browser">1</button>
+<button id="1" type="button" title="Resetar valores padrão do browser">1</button>
 
 ```css
 * {
@@ -113,7 +113,7 @@
 }
 ```
 
-<button type="button" title="Definir variáveis globais">2</button>
+<a type="button" title="Definir variáveis globais">2</a>
 
 ```css
 :root {
