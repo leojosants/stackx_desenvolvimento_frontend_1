@@ -102,7 +102,7 @@
 
 ## Arquivo CSS
 
-<button id="1" type="button" title="Resetar valores padrão do browser">1</button>
+<a id="1" type="button" title="Resetar valores padrão do browser">1</a>
 
 ```css
 * {
