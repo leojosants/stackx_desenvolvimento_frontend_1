@@ -12,7 +12,7 @@
 
 - Proposta de documentação do projeto [Developer Portfolio](https://leojosants.github.io/stackx_desenvolvimento_frontend_1/02_tarefas/03_projeto_final_de_css/developer_portfolio/).
 
-- Comentário explicativo em forma de legenda onde cada número representa a definição do trecho correspondente ao código do [arquivo css](https://leojosants.github.io/stackx_desenvolvimento_frontend_1/02_tarefas/04_documentacao_do_codigo_css/developer_portfolio/assets/css/styles.css).
+- Comentário explicativo em forma de legenda onde cada número representa a definição do trecho correspondente ao código do [arquivo css](https://github.com/leojosants/stackx_desenvolvimento_frontend_1/tree/main/02_tarefas/04_documentacao_do_codigo_css).
 
 ## Legenda
 
