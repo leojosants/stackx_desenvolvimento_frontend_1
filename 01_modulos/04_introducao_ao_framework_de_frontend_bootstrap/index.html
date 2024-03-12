@@ -14,7 +14,7 @@
 		/>
 	</head>
 	<body>
-		<header>
+		<header class="fixed-top">
 			<nav class="navbar bg-dark-subtle p-lg-2">
 				<div class="container-fluid px-lg-5">
 					<a class="navbar-brand">Navbar</a>
@@ -36,23 +36,34 @@
 		<section class="py-4">
 			<div class="container-fluid">
 				<div class="row justify-content-center">
-					<div class="col-10 col-lg-5 text-center">
+					<div class="col-10 col-lg-5 text-center text-lg-start">
 						<h1>
 							Lorem ipsum dolor sit amet consectetur adipisicing elit
 						</h1>
 						<p>
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Quisquam eum similique hic quo suscipit facere, deleniti
-							distinctio laboriosam libero dolores fugiat magnam vitae
-							sint est laudantium voluptatem veniam reprehenderit quod.
+							distinctio
+							<span class="text-bg-success px-1">laboriosam</span> libero
+							dolores fugiat magnam vitae sint est laudantium voluptatem
+							veniam reprehenderit quod.
 						</p>
 						<button class="btn btn-success">Conheça</button>
+						<a href="#" class="link-danger">Entre</a>
+						<span
+							class="d-inline-block text-truncate"
+							style="max-width: 150px"
+						>
+							This text is quite long, and will be truncated once
+							displayed.
+						</span>
 					</div>
-					<div class="col-10 pt-4 pt-lg-0 col-lg-6">
+					<div class="col-10 pt-4 pt-lg-0 col-lg-6 visually-hidden">
 						<img
 							src="https://images.pexels.com/photos/1157255/pexels-photo-1157255.jpeg?auto=compress&cs=tinysrgb&w=400"
 							alt="Avisão sobrevoando cidade"
-							width="80%"
+							width="90%"
+							height="90%"
 						/>
 					</div>
 				</div>
@@ -552,9 +563,7 @@
 						<input type="email" class="form-control" id="inputEmail4" />
 					</div>
 					<div class="col-md-6">
-						<label for="inputPassword4" class="form-label"
-							>Senha</label
-						>
+						<label for="inputPassword4" class="form-label">Senha</label>
 						<input
 							type="password"
 							class="form-control"
@@ -609,7 +618,9 @@
 						</div>
 					</div>
 					<div class="col-12 text-end">
-						<button type="submit" class="btn btn-success btn-lg">Sign in</button>
+						<button type="submit" class="btn btn-success btn-lg">
+							Sign in
+						</button>
 					</div>
 				</form>
 			</div>
