@@ -11,5 +11,5 @@ const newPromise = new Promise((resolve, reject) => {
 
 newPromise
     .then((data) => data.toUpperCase())
-    .then((processedData) => processedData.repeat(3))
+    .then((processedData) => processedData.repeat(10))
     .then((processedDataRepeat) => console.log(processedDataRepeat));
