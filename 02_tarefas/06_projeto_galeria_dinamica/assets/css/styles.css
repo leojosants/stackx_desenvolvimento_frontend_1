@@ -9,9 +9,11 @@
     --color-ffffff: #ffffff;
     --color-ff0000: #ff0000;
     --color-808080: #808080;
+    --color-efeee8: #efeee8;
     --color-f6fbfd4d: #f6fbfd4d;
     --color-829fee0f: #829fee0f;
     --color-829fee66: #829fee66;
+    --color-00e5ff7e: #00e5ff7e;
 }
 
 .c-body h1 {
@@ -102,14 +104,13 @@ button:hover,
     animation: spinz 1.35s linear infinite;
     width: 100%;
     height: 100%;
-    /* background-color: #f6fbfd4d; */
     background-color: var(--color-f6fbfd4d);
     z-index: 100;
 }
 
 .c-body__c-loader {
-    border: 16px solid #efeee8;
-    border-top: 16px solid  rgba(0, 229, 255, 0.493);
+    border: 16px solid var(--color-efeee8);
+    border-top: 16px solid  var(--color-00e5ff7e);
     border-radius: 50%;
     width: 120px;
     height: 120px;
