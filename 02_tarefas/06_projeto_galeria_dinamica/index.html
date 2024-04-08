@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Projeto Galeria Dinâmica</title>
+		<link rel="stylesheet" href="./assets/css/styles.css" />
+		<script src="./assets/js/index.js" defer></script>
+	</head>
+	<body class="c-body">
+		<div class="c-body__c-header">
+			<h1>Galeria Dinâmica</h1>
+			<input type="file" data-js-input="upload" accept=".jpg, .jpeg, .png" />
+			<button
+				type="button"
+				data-js-button="add-image"
+				title="Escolha um arquivo para ser adicionado"
+				disabled="true"
+				style="pointer-events: none"
+			>
+				<strong>ADICIONAR</strong><br />
+			</button>
+		</div>
+
+		<div class="c-body__c-container-images" data-js-container="images">
+			<h4 data-js-message="message">
+				Nenhuma imagem na galeria
+			</h4>
+		</div>
+
+		<div
+			class="c-body__c-preloader"
+			id="preloader"
+			data-js-preloader="preloader"
+		>
+			<div
+				class="c-body__c-loader"
+				id="loader"
+				data-js-loader="loader"
+			></div>
+		</div>
+	</body>
+</html>
