@@ -1,0 +1,73 @@
+<!-- Created By CodingNepal - www.codingnepalweb.com  -->
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Projeto QUIZ</title>
+
+		<link rel="stylesheet" href="./assets/css/style.css" />
+
+		<!-- FontAweome CDN Link for Icons-->
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+		/>
+
+		<script type="module" src="./assets/js/index.js" defer></script>
+	</head>
+	<body>
+		<div class="start-btn"><button>Iniciar Quiz</button></div>
+
+		<div class="info-box">
+			<div class="info-title"><span>REGRAS para respostas</span></div>
+			<div class="info-list">
+				<div class="info">1. Tempo <span>15 segundos</span> para cada.</div>
+				<div class="info">2. Não poderão ser desfeitas.</div>
+				<div class="info">3. Desabilitarão ao final do tempo.</div>
+				<div class="info">4. Obrigatório responder até o final.</div>
+				<div class="info">5. Pontuação pelas corretas.</div>
+			</div>
+			<div class="buttons">
+				<button class="quit">Sair</button>
+				<button class="restart">Continuar</button>
+			</div>
+		</div>
+
+		<div class="quiz-box">
+			<header>
+				<div class="title">Quiz - GIT</div>
+				<div class="timer">
+					<div class="time-left-txt">Tempo</div>
+					<div class="timer-sec">15</div>
+				</div>
+				<div class="time-line"></div>
+			</header>
+
+			<section>
+				<div class="que-text"></div>
+				<div class="option-list"></div>
+			</section>
+
+			<footer>
+				<div class="total-que"></div>
+				<button class="next-btn">Próxima</button>
+			</footer>
+		</div>
+
+		<div class="result-box">
+			<div class="icon">
+				<i class="fas fa-crown"></i>
+			</div>
+
+			<div class="complete-text">Quiz completo!</div>
+
+			<div class="score-text"></div>
+
+			<div class="buttons">
+				<button class="restart">Repetir</button>
+				<button class="quit">Sair</button>
+			</div>
+		</div>
+	</body>
+</html>
