@@ -1,7 +1,7 @@
 export const questions = [
     {
         id: 1,
-        question: 'O que é Git',
+        question: 'O que é "Git"?',
         answer: 'Sistema de controle de versões',
         options: [
             'Sistema de controle de versões',
@@ -12,101 +12,101 @@ export const questions = [
     },
     {
         id: 2,
-        question: 'Comando "git help"',
-        answer: 'Axília nos comandos',
+        question: 'Comando "git help"...',
+        answer: 'Axíliar nos comandos',
         options: [
-            'Cria um novo repositório',
-            'Limpa histórico',
-            'Cria um novo ramo',
-            'Axília nos comandos',
+            'Criar um novo repositório',
+            'Limpar histórico',
+            'Criar um novo ramo',
+            'Axíliar nos comandos',
         ]
     },
     {
         id: 3,
-        question: 'Comando "git init"',
-        answer: 'Inicia um novo repositório',
+        question: 'Comando "git init"...',
+        answer: 'Iniciar um novo repositório',
         options: [
-            'Clona um repositório',
-            'Inicia um novo repositório',
-            'Exclui um repositório',
-            'Copia um repositório',
+            'Clonar um repositório',
+            'Iniciar um novo repositório',
+            'Excluir um repositório',
+            'Copiar um repositório',
         ]
     },
     {
         id: 4,
-        question: 'Comando "git status"',
-        answer: 'Estado atual',
+        question: 'Comando "git status"...',
+        answer: 'Informar estado atual',
         options: [
-            'Estado anterior',
-            'Estado posterior',
-            'Estado nulo',
-            'Estado atual'
+            'Informar estado anterior',
+            'Informar estado posterior',
+            'Informar estado nulo',
+            'Informar estado atual'
         ]
     },
     {
         id: 5,
-        question: 'Comando "git download"',
+        question: 'Comando "git download"...',
         answer: 'Não existe',
         options: [
-            'Clona um projeto',
-            'Baixa um projeto',
+            'Clonar um projeto',
+            'Baixar um projeto',
             'Não existe',
-            'Cria um projeto'
+            'Criar um projeto'
         ]
     },
     {
         id: 6,
-        question: 'Comando "git rm"',
-        answer: 'Remove arquivo',
+        question: 'Comando "git rm"...',
+        answer: 'Remover arquivo',
         options: [
-            'Copia arquivo',
-            'Remove arquivo',
-            'Executa arquivo',
-            'Cria arquivo'
+            'Copiar arquivo',
+            'Remover arquivo',
+            'Executar arquivo',
+            'Criar arquivo'
         ]
     },
     {
         id: 7,
-        question: 'Comando "git pull"',
-        answer: 'Atualiza repositorio local',
+        question: 'Comando "git pull"...',
+        answer: 'Atualizar repositorio local',
         options: [
-            'Atualiza repositorio local',
-            'Remove repositorio local',
-            'Copia repositorio local',
-            'Atualiza repositorio remoto',
+            'Atualizar repositorio local',
+            'Remover repositorio local',
+            'Copiar repositorio local',
+            'Atualizar repositorio remoto',
         ]
     },
     {
         id: 8,
-        question: 'Comando "git push"',
-        answer: 'Atualiza repositorio remoto',
+        question: 'Comando "git push"...',
+        answer: 'Atualizar repositorio remoto',
         options: [
-            'Atualiza repositorio local',
-            'Copia repositorio local',
-            'Atualiza repositorio remoto',
-            'Bloqueia repositorio local',
+            'Atualizar repositorio local',
+            'Copiar repositorio local',
+            'Atualizar repositorio remoto',
+            'Bloqueiar repositorio local',
         ]
     },
     {
         id: 9,
-        question: 'Comando "git tag"',
-        answer: 'Cria ponto específico',
+        question: 'Comando "git tag"...',
+        answer: 'Criar ponto específico',
         options: [
-            'Atualiza repositorio local',
-            'Cria ponto específico',
-            'Atualiza repositorio remoto',
-            'Cria novo ramo',
+            'Atualizar repositorio local',
+            'Criar ponto específico',
+            'Atualizar repositorio remoto',
+            'Criar novo ramo',
         ]
     },
     {
         id: 10,
-        question: 'Comando "git clone"',
-        answer: 'Clona um repositório',
+        question: 'Comando "git clone"...',
+        answer: 'Clonar um repositório',
         options: [
-            'Atualiza repositorio remoto',
-            'Clona um repositório',
-            'Atualiza repositorio local',
-            'Clona um arquivo',
+            'Atualizar repositorio remoto',
+            'Clonar um repositório',
+            'Atualizar repositorio local',
+            'Clonar um arquivo',
         ]
     },
 ];

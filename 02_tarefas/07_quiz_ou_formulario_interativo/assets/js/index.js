@@ -1,63 +1,85 @@
 import { questions } from './database/questions_db.js';
 
-const DOM_startBtn = document.querySelector('.start-btn button');
-const DOM_infoBox = document.querySelector('.info-box');
-const DOM_exitBtn = DOM_infoBox.querySelector('.buttons .quit');
-const DOM_continueBtn = DOM_infoBox.querySelector('.buttons .restart');
-const DOM_quizBox = document.querySelector('.quiz-box');
-const DOM_resultBox = document.querySelector('.result-box');
-const DOM_optionList = document.querySelector('.option-list');
-const DOM_timeLine = document.querySelector('header .time-line');
-const DOM_timeText = document.querySelector('.timer .time-left-txt');
-const DOM_timeCount = document.querySelector('.timer .timer-sec');
+const DOM_boxinfo = document.querySelector('[data-js-info-box]');
+const DOM_boxQuiz = document.querySelector('[data-js-quiz-box]');
+const DOM_boxResult = document.querySelector('[data-js-result-box]');
+const DOM_buttonStart = document.querySelector('[data-js-start-button');
+const DOM_buttonContinue = document.querySelector('[data-js-info-box-restart');
+const DOM_buttonExit = document.querySelector('[data-js-info-box-quit]');
+const DOM_buttonNext = document.querySelector('[data-js-next-button]');
+const DOM_optionList = document.querySelector('[data-js-option-list]');
+const DOM_timeLine = document.querySelector('[data-js-time-line]');
+const DOM_timeText = document.querySelector('[data-js-time-left-text]');
+const DOM_timeCount = document.querySelector('[data-js-timer-seconds]');
+const DOM_bottomQuestionCounter = document.querySelector('[data-js-total-question]');
+const DOM_scoreText = document.querySelector('[data-js-score-text]');
+const DOM_restartQuiz = document.querySelector('[data-js-result-box-restart]');
+const DOM_quitQuiz = document.querySelector('[data-js-result-box-quit]');
 
-const DOM_nextBtn = document.querySelector('footer .next-btn');
-const DOM_bottomQuesCounter = document.querySelector('footer .total-que');
-const DOM_scoreText = document.querySelector('.score-text');
-const DOM_restartQuiz = DOM_resultBox.querySelector('.buttons .restart');
-const DOM_quitQuiz = DOM_resultBox.querySelector('.buttons .quit');
+const database = questions;
 
 let counterLine = null;
 let counter = null;
 let timeValue = 15;
+let questionNumber = 1;
+let questionCount = 0;
 let widthValue = 0;
 let userScore = 0;
-let queCount = 0;
-let queNumb = 1;
 
-let tickIconTag = ('<div class="icon tick">')
+let tickIconTag = ('<div class="c-quiz-box__c-icon c-quiz-box__c-tick">')
     .concat('<i class="fas fa-check"></i>')
     .concat('</div>');
 
-let crossIconTag = ('<div class="icon cross">')
+
+let crossIconTag = ('<div class="c-quiz-box__c-icon c-quiz-box__c-cross">')
     .concat('<i class="fas fa-times"></i>')
     .concat('</div>');
 
-const showQuestions = (index) => {
-    const queText = document.querySelector('.que-text');
+const shuffleArray = (array) => {
+    let currentIndex = array.length;
+    let temporaryValue = null;
+    let randomIndex = null;
 
-    let queTag = ('<span>')
-        .concat(`${questions[index].id}. ${questions[index].question}`)
+    while (0 !== currentIndex) {
+        randomIndex = Math.floor(Math.random() * currentIndex);
+        currentIndex -= 1;
+        temporaryValue = array[currentIndex];
+        array[currentIndex] = array[randomIndex];
+        array[randomIndex] = temporaryValue;
+    }
+};
+
+const showQuestions = (index) => {
+
+    shuffleArray(database[index].options);
+
+    const questionText = document.querySelector('.c-quiz-box__c-question-text');
+
+    let questionTag = ('<span>')
+        .concat(`${database[index].id}. ${database[index].question}`)
         .concat('</span>');
 
-    let optionTag = ('<div class="option">')
-        .concat(`<span>${questions[index].options[0]}</span>`)
+    let tagq = document.createElement('span');
+    tagq.innerText = `${database[index].id}. ${database[index].question}`;
+
+    let optionTag = ('<div class="c-quiz-box__c-option">')
+        .concat(`<span>${database[index].options[0]}</span>`)
         .concat('</div>')
-        .concat('<div class="option">')
-        .concat(`<span>${questions[index].options[1]}</span>`)
+        .concat('<div class="c-quiz-box__c-option">')
+        .concat(`<span>${database[index].options[1]}</span>`)
         .concat('</div>')
-        .concat('<div class="option">')
-        .concat(`<span>${questions[index].options[2]}</span>`)
+        .concat('<div class="c-quiz-box__c-option">')
+        .concat(`<span>${database[index].options[2]}</span>`)
         .concat('</div>')
-        .concat('<div class="option">')
-        .concat(`<span>${questions[index].options[3]}</span>`)
+        .concat('<div class="c-quiz-box__c-option">')
+        .concat(`<span>${database[index].options[3]}</span>`)
         .concat('</div>');
 
-    queText.innerHTML = queTag;
+    questionText.innerHTML = questionTag;
 
     DOM_optionList.innerHTML = optionTag;
 
-    const option = DOM_optionList.querySelectorAll('.option');
+    const option = DOM_optionList.querySelectorAll('.c-quiz-box__c-option');
 
     option.forEach((data) => {
         data.addEventListener('click', () => {
@@ -71,40 +93,40 @@ const optionSelected = (answer) => {
     clearInterval(counterLine);
 
     let userAns = answer.textContent;
-    let correctAns = questions[queCount].answer;
+    let correctAnswer = database[questionCount].answer;
 
     const allOptionsLength = DOM_optionList.children.length;
 
-    if (userAns === correctAns) {
+    if (userAns === correctAnswer) {
         userScore += 1;
-        answer.classList.add('correct');
+        answer.classList.add('c--correct');
         answer.insertAdjacentHTML('beforeend', tickIconTag);
     }
     else {
-        answer.classList.add('incorrect');
+        answer.classList.add('c--incorrect');
         answer.insertAdjacentHTML('beforeend', crossIconTag);
 
         for (let i = 0; i < allOptionsLength; i++) {
-            if (DOM_optionList.children[i].textContent === correctAns) {
-                DOM_optionList.children[i].setAttribute('class', 'option correct');
+            if (DOM_optionList.children[i].textContent === correctAnswer) {
+                DOM_optionList.children[i].setAttribute('class', 'c-quiz-box__c-option c--correct');
                 DOM_optionList.children[i].insertAdjacentHTML('beforeend', tickIconTag);
             }
         }
     }
 
     for (let i = 0; i < allOptionsLength; i++) {
-        DOM_optionList.children[i].classList.add('disabled');
+        DOM_optionList.children[i].classList.add('c--disabled');
     }
 
-    DOM_nextBtn.classList.add('show');
+    DOM_buttonNext.classList.add('c--show');
 };
 
-const queCounter = (index) => {
-    let totalQueCounTag = ('<span>')
-        .concat(`<p>${index}</p> of <p>${questions.length}</p> Questions`)
+const questionCounter = (index) => {
+    let totalQuestionCountTag = ('<span>')
+        .concat(`<p>${index}</p> de <p>${database.length}</p> Perguntas`)
         .concat('</span>');
 
-    DOM_bottomQuesCounter.innerHTML = totalQueCounTag;
+    DOM_bottomQuestionCounter.innerHTML = totalQuestionCountTag;
 };
 
 const startTimer = (time) => {
@@ -123,20 +145,20 @@ const startTimer = (time) => {
 
             const allOptionsLength = DOM_optionList.children.length;
 
-            let correctAns = questions[queCount].answer;
+            let correctAnswer = database[questionCount].answer;
 
             for (let i = 0; i < allOptionsLength; i++) {
-                if (DOM_optionList.children[i].textContent === correctAns) {
-                    DOM_optionList.children[i].setAttribute('class', 'option correct');
+                if (DOM_optionList.children[i].textContent === correctAnswer) {
+                    DOM_optionList.children[i].setAttribute('class', 'c-quiz-box__c-option c--correct');
                     DOM_optionList.children[i].insertAdjacentHTML('beforeend', tickIconTag);
                 }
             }
 
             for (let i = 0; i < allOptionsLength; i++) {
-                DOM_optionList.children[i].classList.add("disabled");
+                DOM_optionList.children[i].classList.add("c--disabled");
             }
 
-            DOM_nextBtn.classList.add("show");
+            DOM_buttonNext.classList.add("c--show");
         }
     }
 
@@ -152,67 +174,59 @@ const startTimerLine = (time) => {
     counterLine = setInterval(timer, 29);
 };
 
+const createScoreTag = (emoji) => {
+    const scoreTag = ('<span>')
+        .concat(`${emoji} Pontuação: `)
+        .concat(`<p>${userScore}</p>`)
+        .concat('de')
+        .concat(`<p>${database.length}</p>`)
+        .concat('</span>');
+    return scoreTag;
+}
+
 const showResult = () => {
-    DOM_infoBox.classList.remove('active-info');
-    DOM_quizBox.classList.remove('active-quiz');
-    DOM_resultBox.classList.add('active-result');
+    DOM_boxinfo.classList.remove('c--active-info');
+    DOM_boxQuiz.classList.remove('c--active-quiz');
+    DOM_boxResult.classList.add('c--active-result');
 
     const scoreText = DOM_scoreText;
 
     if (userScore > 3) {
-        const scoreTag = ('<span>')
-            .concat('🎉 Pontuação: ')
-            .concat(`<p>${userScore}</p>`)
-            .concat('de')
-            .concat(`<p>${questions.length}</p>`)
-            .concat('</span>');
-        scoreText.innerHTML = scoreTag;
+        scoreText.innerHTML = createScoreTag('🎉');
     }
     else if (userScore > 1) {
-        const scoreTag = ('<span>')
-            .concat('😎 Pontuação: ')
-            .concat(`<p>${userScore}</p>`)
-            .concat('de')
-            .concat(`<p>${questions.length}</p>`)
-            .concat('</span>');
-        scoreText.innerHTML = scoreTag;
+        scoreText.innerHTML = createScoreTag('😎');
     }
     else {
-        const scoreTag = ('<span>')
-            .concat('😐 Pontuação: ')
-            .concat(`<p>${userScore}</p>`)
-            .concat('de')
-            .concat(`<p>${questions.length}</p>`)
-            .concat('</span>');
-        scoreText.innerHTML = scoreTag;
+        scoreText.innerHTML = createScoreTag('😐');
     }
 };
 
-DOM_startBtn.addEventListener('click', () => {
-    DOM_infoBox.classList.add('active-info');
+DOM_buttonStart.addEventListener('click', () => {
+    DOM_boxinfo.classList.add('c--active-info');
 });
 
-DOM_exitBtn.addEventListener('click', () => {
-    DOM_infoBox.classList.remove('active-info');
+DOM_buttonExit.addEventListener('click', () => {
+    DOM_boxinfo.classList.remove('c--active-info');
 });
 
-DOM_continueBtn.addEventListener('click', () => {
-    DOM_infoBox.classList.remove('active-info');
-    DOM_quizBox.classList.add('active-quiz');
+DOM_buttonContinue.addEventListener('click', () => {
+    DOM_boxinfo.classList.remove('c--active-info');
+    DOM_boxQuiz.classList.add('c--active-quiz');
 
     showQuestions(0);
-    queCounter(1);
+    questionCounter(1);
     startTimer(15);
     startTimerLine(0);
 });
 
-DOM_nextBtn.addEventListener('click', () => {
-    if (queCount < questions.length - 1) {
-        queCount++;
-        queNumb++;
+DOM_buttonNext.addEventListener('click', () => {
+    if (questionCount < database.length - 1) {
+        questionCount++;
+        questionNumber++;
 
-        showQuestions(queCount);
-        queCounter(queNumb);
+        showQuestions(questionCount);
+        questionCounter(questionNumber);
 
         clearInterval(counter);
         clearInterval(counterLine);
@@ -221,7 +235,7 @@ DOM_nextBtn.addEventListener('click', () => {
         startTimerLine(widthValue);
 
         DOM_timeText.textContent = 'Tempo';
-        DOM_nextBtn.classList.remove('show');
+        DOM_buttonNext.classList.remove('c--show');
     }
     else {
         clearInterval(counter);
@@ -231,17 +245,17 @@ DOM_nextBtn.addEventListener('click', () => {
 });
 
 DOM_restartQuiz.addEventListener('click', () => {
-    DOM_quizBox.classList.add('active-quiz');
-    DOM_resultBox.classList.remove('active-result');
+    DOM_boxQuiz.classList.add('c--active-quiz');
+    DOM_boxResult.classList.remove('c--active-result');
 
     timeValue = 15;
     widthValue = 0;
     userScore = 0;
-    queCount = 0;
-    queNumb = 1;
+    questionCount = 0;
+    questionNumber = 1;
 
-    showQuestions(queCount);
-    queCounter(queNumb);
+    showQuestions(questionCount);
+    questionCounter(questionNumber);
 
     clearInterval(counter);
     clearInterval(counterLine);
@@ -250,7 +264,7 @@ DOM_restartQuiz.addEventListener('click', () => {
     startTimerLine(widthValue);
 
     DOM_timeText.textContent = 'Tempo';
-    DOM_nextBtn.classList.remove('show');
+    DOM_buttonNext.classList.remove('c--show');
 });
 
 DOM_quitQuiz.addEventListener('click', () => {

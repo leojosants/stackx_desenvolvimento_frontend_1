@@ -1,10 +1,15 @@
-<!-- Created By CodingNepal - www.codingnepalweb.com  -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Projeto QUIZ</title>
+
+		<link
+			rel="shortcut icon"
+			href="./assets/images/favicon.png"
+			type="image/x-icon"
+		/>
 
 		<link rel="stylesheet" href="./assets/css/style.css" />
 
@@ -16,57 +21,84 @@
 
 		<script type="module" src="./assets/js/index.js" defer></script>
 	</head>
-	<body>
-		<div class="start-btn"><button>Iniciar Quiz</button></div>
+	<body class="c-body">
+		<div class="c-body__c-start-button">
+			<button data-js-start-button>Iniciar Quiz</button>
+		</div>
 
-		<div class="info-box">
-			<div class="info-title"><span>REGRAS para respostas</span></div>
-			<div class="info-list">
-				<div class="info">1. Tempo <span>15 segundos</span> para cada.</div>
-				<div class="info">2. Não poderão ser desfeitas.</div>
-				<div class="info">3. Desabilitarão ao final do tempo.</div>
-				<div class="info">4. Obrigatório responder até o final.</div>
-				<div class="info">5. Pontuação pelas corretas.</div>
+		<div class="c-body__c-info-box" data-js-info-box>
+			<div class="c-info-box__c-info-title">
+				<span>REGRAS para respostas</span>
 			</div>
-			<div class="buttons">
-				<button class="quit">Sair</button>
-				<button class="restart">Continuar</button>
+			<div class="c-info-box__c-info-list">
+				<div class="c-info-box__c-info">
+					1. Tempo <span>15 segundos</span> para cada.
+				</div>
+				<div class="c-info-box__c-info">2. Não poderão ser desfeitas.</div>
+				<div class="c-info-box__c-info">
+					3. Desabilitarão ao final do tempo.
+				</div>
+				<div class="c-info-box__c-info">
+					4. Obrigatório responder até o final.
+				</div>
+				<div class="c-info-box__c-info">5. Pontuação pelas corretas.</div>
+			</div>
+			<div class="c-info-box__c-buttons">
+				<button class="c-info-box__c-quit" data-js-info-box-quit>
+					Sair
+				</button>
+				<button class="c-info-box__c-restart" data-js-info-box-restart>
+					Continuar
+				</button>
 			</div>
 		</div>
 
-		<div class="quiz-box">
+		<div class="c-body__c-quiz-box" data-js-quiz-box>
 			<header>
-				<div class="title">Quiz - GIT</div>
-				<div class="timer">
-					<div class="time-left-txt">Tempo</div>
-					<div class="timer-sec">15</div>
+				<div class="c-quiz-box__c-title">Quiz - GIT</div>
+				<div class="c-quiz-box__c-timer">
+					<div class="c-quiz-box__c-time-left-text" data-js-time-left-text>
+						Tempo
+					</div>
+					<div class="c-quiz-box__c-timer-seconds" data-js-timer-seconds>
+						15
+					</div>
 				</div>
-				<div class="time-line"></div>
+				<div class="c-quiz-box__c-time-line" data-js-time-line></div>
 			</header>
 
-			<section>
-				<div class="que-text"></div>
-				<div class="option-list"></div>
+			<section class="c-quiz-box__c-section">
+				<div class="c-quiz-box__c-question-text"></div>
+				<div class="c-quiz-box__c-option-list" data-js-option-list></div>
 			</section>
 
-			<footer>
-				<div class="total-que"></div>
-				<button class="next-btn">Próxima</button>
+			<footer class="c-quiz-box__c-footer">
+				<div
+					class="c-quiz-box__c-total-question"
+					data-js-total-question
+				></div>
+				<button class="c-quiz-box__c-next-button" data-js-next-button>
+					Próxima
+				</button>
 			</footer>
 		</div>
 
-		<div class="result-box">
-			<div class="icon">
+		<div class="c-body__c-result-box" data-js-result-box>
+			<div class="c-result-box__c-icon">
 				<i class="fas fa-crown"></i>
 			</div>
 
-			<div class="complete-text">Quiz completo!</div>
+			<div class="c-result-box__c-complete-text">Quiz completo!</div>
 
-			<div class="score-text"></div>
+			<div class="c-result-box__c-score-text" data-js-score-text></div>
 
-			<div class="buttons">
-				<button class="restart">Repetir</button>
-				<button class="quit">Sair</button>
+			<div class="c-result-box__c-buttons">
+				<button class="c-result-box__c-restart" data-js-result-box-restart>
+					Repetir
+				</button>
+				<button class="c-result-box__c-quit" data-js-result-box-quit>
+					Sair
+				</button>
 			</div>
 		</div>
 	</body>
