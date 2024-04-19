@@ -1,0 +1,11 @@
+:root {
+    --color-00385b: #00385b;
+}
+
+.c-title {
+    color: #00385b;
+    font-family: 'Lato', sans-serif;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 25px;
+}
