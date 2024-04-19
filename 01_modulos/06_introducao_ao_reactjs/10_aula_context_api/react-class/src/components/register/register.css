@@ -1,0 +1,14 @@
+:root {
+    --color-d8d8d8: #d8d8d8;
+}
+
+.c-register-container {
+    padding: 10px;
+}
+
+.c-register-input {
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-color: var(--color-d8d8d8);
+}
