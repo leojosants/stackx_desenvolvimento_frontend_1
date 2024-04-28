@@ -1,0 +1,55 @@
+:root {
+    --color-ffffff: #ffffff;
+    --color-f48915: #f48915;
+    --color-f4881523: #f4881523;
+    --color-3c3f45: #3c3f45;
+}
+
+.class-header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.class-logo {
+    width: 10rem;
+    height: 3rem;
+    transition: 300ms all ease-in-out;
+}
+
+.class-logo:hover {
+    background:  var(--color-f4881523);
+    border-radius: 5px;
+}
+
+
+.class-header-menu {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+    color: var(--color-ffffff);
+}
+
+.class-header-menu > li {
+    cursor: pointer;
+    transition: .4s;
+}
+
+.class-header-menu > li:hover {
+    cursor: pointer;
+    color: var(--color-f48915);
+}
+
+@media screen and (max-width:768px) {    
+    .class-header>:nth-child(2) {
+        position: fixed;
+        right: 2rem;
+        z-index: 99;  
+    }
+    
+    .class-header-menu {
+        flex-direction: column;
+        background-color: var(--color-3c3f45);
+        padding: 2rem;
+        border-radius: 5px;
+    }
+}

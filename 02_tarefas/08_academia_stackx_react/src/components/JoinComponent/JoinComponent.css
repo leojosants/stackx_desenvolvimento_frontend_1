@@ -1,0 +1,84 @@
+:root {
+    --color-d9d9d9: #d9d9d9;
+    --color-ffffff: #ffffff;
+    --color-f48915: #f48915;
+    --color-808080: #808080;
+}
+
+.class-join {
+    display: flex;
+    padding: 0 2rem;
+    gap: 10rem;
+}
+
+.class-left-join {
+    color: var(--color-ffffff);
+    font-size: 3rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.class-left-join>hr {
+    position: absolute;
+    width: 10.5rem;
+    border: 1px solid var(--color-f48915);
+    border-radius: 20%;
+    margin: -10px 0;
+}
+
+.class-left-join>div {
+    display: flex;
+    gap: 1rem;
+}
+
+.class-right-join {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+.class-email-container {
+    display: flex;
+    gap: 3rem;
+    background-color: var(--color-808080);
+    padding: 1rem 2rem;
+    border-radius: 5px;
+}
+
+.class-email-container>input {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: var(--color-d9d9d9);
+}
+
+::placeholder {
+    color: var(--color-d9d9d9);
+}
+
+.class-button.class-button-join {
+    background-color: var(--color-f48915);
+    color: var(--color-ffffff);
+    opacity: 1;
+}
+
+.class-button.class-button-join:hover {
+    opacity: 0.8;
+}
+
+@media screen and (max-width:768px) {
+    .class-join {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .class-left-join {
+        font-size: x-large;
+        flex-direction: column;
+    }
+    
+    .class-right-join {
+        padding: 2rem;
+    }
+}

@@ -1,0 +1,86 @@
+:root {
+    --color-ffffff: #ffffff;
+    --color-808080: #808080;
+    --color-f48915: #f48915;
+}
+
+.class-programs {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 0 2rem;
+}
+
+.class-programs-header {
+    display: flex;
+    gap: 5rem;
+    font-weight: bold;
+    font-size: 3rem;
+    justify-content: center;
+    color: var(--color-ffffff);
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.class-program-categories {
+    display: flex;
+    gap:  1rem;
+}
+
+.class-category {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--color-808080);
+    padding: 2rem;
+    gap: 1rem;
+    color: var(--color-ffffff);
+    justify-content: space-between;
+    border-radius: 5px;
+    transition: 300ms all ease-in-out;
+}
+
+.class-category>:nth-child(1) {
+    width: 2rem;
+    height: 2rem;
+    fill: var(--color-ffffff);
+}
+
+.class-category>:nth-child(2) {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.class-category>:nth-child(3) {
+    font-size: 0.9rem;
+    line-height: 25px;
+}
+
+.class-join-now {
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.class-join-now>img {
+    width: 1rem;
+}
+
+.class-category:hover {
+    cursor: pointer;
+    background-color: var(--color-f48915);
+}
+
+@media screen and (max-width:768px) {
+    .class-programs-header {
+        flex-direction: column;
+        gap: 1rem;
+        font-size: x-large;
+        align-items: center;
+        justify-content: center;
+        margin-top: 2rem;
+    }
+    
+    .class-program-categories {
+        flex-direction: column;
+    }
+}

@@ -1,0 +1,142 @@
+:root{
+    --color-ffffff: #ffffff;
+    --color-fa5042: #fa5042;
+    --color-ffa739: #ffa739;
+    --color-f48915: #f48915;
+}
+
+.class-testimonials {
+    display: flex;
+    gap: 1rem;
+    padding: 0 2rem;
+}
+
+.class-left-testimonials {
+    display: flex;
+    flex: 1 1;
+    gap: 2rem;
+    flex-direction: column;
+    text-transform: uppercase;
+    color: var(--color-ffffff);
+}
+
+.class-left-testimonials>:nth-child(1) {
+    color: var(--color-f48915);
+    font-weight: bold;
+}
+
+.class-left-testimonials>:nth-child(2),
+.class-left-testimonials>:nth-child(3) {
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.class-left-testimonials>:nth-child(4) {
+    text-transform: none;
+    text-align: justify;
+    letter-spacing: 2px;
+    line-height: 40px;
+}
+
+.class-right-testimonials {
+    flex: 1;
+    position: relative;
+}
+
+.class-right-testimonials>img {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    object-fit: cover;
+    right: 8rem;
+    top: 2rem;
+}
+
+.class-right-testimonials>:nth-child(1) {
+    position: absolute;
+    width: 17rem;
+    height: 20rem;
+    border: 2px solid var(--color-f48915);    
+    background-color: transparent;
+    right: 9rem;
+    top: 0.9rem;
+}
+
+.class-right-testimonials>:nth-child(2) {
+    position: absolute;
+    width: 17rem;
+    height: 19rem;
+    right: 7rem;
+    top: 4rem;
+    background: linear-gradient(
+        210.41deg,
+        var(--color-fa5042) 1.14%,
+        var(--color-ffa739) 100.75% 
+    );
+}
+
+.class-arrows {   
+    display: flex;
+    gap: 1rem;
+    position: absolute;
+    bottom: 1rem;
+    left: 3rem;
+}
+
+.class-arrows>img {
+    width: 1.5rem;
+    cursor: pointer;
+    opacity: 0.5;
+    transition: 300ms all ease-in-out;
+}
+
+.class-arrows>img:hover {
+    opacity: 1;
+}
+
+@media screen and (max-width: 768px)  {
+    .class-testimonials {
+        flex-direction: column;
+    }
+    
+    .class-left-testimonials>:nth-child(1) {
+        text-align: right;
+    }
+
+    .class-left-testimonials>:nth-child(2),
+    .class-left-testimonials>:nth-child(3) {
+        font-size: xx-large;
+        text-align: right;
+    }
+    
+    .class-right-testimonials {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+    
+    .class-right-testimonials>div {
+        position: relative;
+        margin: 0 auto;
+        display: none;
+    }
+    
+    .class-right-testimonials>img {
+        top: 0;
+        right: 0;
+        position: relative;
+        align-self: center;
+    }
+    
+    .class-right-testimonials>:last-child {
+        display: block;
+        bottom: 0;
+        left: 0;
+    }
+    
+    .class-arrows> img {
+        margin-left: 2rem;
+    }
+}
