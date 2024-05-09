@@ -1,11 +1,9 @@
-function App() {
-  const element = <p>primeiro elemento</p>;
+import PlansAndPrices from "./components/PlansAndPrices/PlansAndPricesComponent.jsx";
 
+function App() {
   return (
     <div>
-      <h1>Olá, JSX</h1>
-      <p>Este é meu primeiro JSX</p>
-      {element}
+      <PlansAndPrices />
     </div>
   );
 }
