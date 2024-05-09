@@ -1,8 +1,11 @@
 function App() {
+  const element = <p>primeiro elemento</p>;
+
   return (
-    <div> 
+    <div>
       <h1>Olá, JSX</h1>
       <p>Este é meu primeiro JSX</p>
+      {element}
     </div>
   );
 }
