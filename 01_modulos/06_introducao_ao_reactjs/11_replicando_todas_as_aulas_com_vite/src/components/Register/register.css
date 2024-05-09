@@ -1,0 +1,18 @@
+.c-register-container {
+    padding: 10px;
+}
+
+.c-register-input {
+    margin: 20px;
+    padding: 10px;
+    font-size: 18px;
+    border-color: rgb(216, 216, 216);
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}
+
+.c-register-input:focus {
+    background: rgba(255, 166, 0, 0.3);
+    color: white;
+}

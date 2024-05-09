@@ -1,11 +1,9 @@
 import PlansAndPrices from "./components/PlansAndPrices/PlansAndPricesComponent.jsx";
-import Register from "./components/Register/RegisterComponent.jsx";
 
 function App() {
   return (
     <div>
       <PlansAndPrices />
-      <Register />
     </div>
   );
 }

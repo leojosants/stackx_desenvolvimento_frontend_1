@@ -1,4 +1,8 @@
 .c-image-plans {
-    height: 100px;
-    width: 100px;
+    width: 200px;
+    height: 200px;
+    align-items: center;
+    margin-top: 30px ;
+    border-radius: 20px;
+    object-fit: cover;
 }
