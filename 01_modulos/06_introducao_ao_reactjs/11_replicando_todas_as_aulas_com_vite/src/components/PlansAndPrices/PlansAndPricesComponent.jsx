@@ -1,5 +1,7 @@
 import Title from '../Title/TitleComponent.jsx';
 import ImagePlans from '../ImagePlans/ImageComponentPlans.jsx';
+import Button from '../Button/ButtonComponent.jsx';
+import Input from '../Input/InputComponent.jsx';
 import sesi from '../../assets/images/sesi.png';
 import sesi2 from '../../assets/images/sesi2.png';
 import sesi3 from '../../assets/images/sesi3.png';
@@ -24,14 +26,40 @@ const listItem = [
 ];
 
 const PlansAndPrices = () => {
+    const handleOnClick = () => {
+        console.log('Clicou!');
+    };
+    const handleShowMessage = (event) => {
+        const eventTarget = event.target;
+        const value = eventTarget.value;
+        console.log(value);
+    };
+
     return (
         <div>
             {
                 listItem.map(
                     (item, indice) => (
-                        <div key={indice} >
-                            <Title title={item.title} />
-                            <ImagePlans src={item.src} alt={item.alt} />
+                        <div key={indice}>
+                            <Title
+                                title={item.title}
+                            />
+
+                            <ImagePlans
+                                src={item.src}
+                                alt={item.alt}
+                            />
+
+                            <Button
+                                onClick={handleOnClick}
+                                text={'Comprar'}
+                            />
+
+                            <Input
+                                type={'text'}
+                                onChange={handleShowMessage}
+                                placeholder={'Digite algo...'}
+                            />
                         </div>
                     )
                 )

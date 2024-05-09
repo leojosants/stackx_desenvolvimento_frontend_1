@@ -1,6 +1,10 @@
-const Button = () => {
+const Button = (props) => {
+    const { onClick, text } = props;
+
     return (
-        <div>Button</div>
+        <button onClick={onClick}>
+            {text}
+        </button>
     );
 };
 

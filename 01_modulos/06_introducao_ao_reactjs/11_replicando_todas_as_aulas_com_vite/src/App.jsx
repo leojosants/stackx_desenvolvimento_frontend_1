@@ -1,23 +1,25 @@
-// import Create from './ciclo_de_vida_dos_componentes/create.jsx';
-import Update from './ciclo_de_vida_dos_componentes/update.jsx';
+import PlansAndPrices from "./components/PlansAndPrices/PlansAndPricesComponent.jsx";
+import Register from "./components/Register/RegisterComponent.jsx";
 
 function App() {
   return (
     <div>
-      {/* <Create /> */}
-      <Update />
+      <PlansAndPrices />
+      <Register />
     </div>
   );
 }
 
 export default App;
 
-// import PlansAndPrices from "./components/PlansAndPrices/PlansAndPricesComponent.jsx";
+// import Create from './ciclo_de_vida_dos_componentes/create.jsx';
+// import Update from './ciclo_de_vida_dos_componentes/update.jsx';
 
 // function App() {
 //   return (
 //     <div>
-//       <PlansAndPrices />
+//       <Create />
+//       <Update />
 //     </div>
 //   );
 // }
