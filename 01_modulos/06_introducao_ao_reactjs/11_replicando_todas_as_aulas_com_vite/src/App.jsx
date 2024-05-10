@@ -13,14 +13,16 @@
 
 // import Create from './ciclo_de_vida_dos_componentes/create.jsx';
 // import Update from './ciclo_de_vida_dos_componentes/update.jsx';
-import MiniGame2 from "./MiniGame2/MiniGame2";
+import UseThemeButton from "./assets/contextApi/ContextApi";
+// import MiniGame2 from "./MiniGame2/MiniGame2";
 
 function App() {
   return (
     <div>
       {/* <Create /> */}
       {/* <Update /> */}
-      <MiniGame2 />
+      {/* <MiniGame2 /> */}
+      <UseThemeButton />
     </div>
   );
 }
