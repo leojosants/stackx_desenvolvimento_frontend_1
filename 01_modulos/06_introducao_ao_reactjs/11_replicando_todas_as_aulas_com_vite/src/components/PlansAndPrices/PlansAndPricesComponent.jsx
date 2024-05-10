@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Title from '../Title/TitleComponent.jsx';
 import ImagePlans from '../ImagePlans/ImageComponentPlans.jsx';
 import Button from '../Button/ButtonComponent.jsx';
@@ -46,6 +46,16 @@ const PlansAndPrices = () => {
         alert(`Cadastro para o Combo ${selectedCombo + 1} realizado com sucesso!`);
         handleCloseModal();
     };
+
+    useEffect(
+        () => { 
+            if (selectedCombo!==null) {
+                console.log('Modal aberto');
+            } else {
+                console.log('Modal fechado');
+            }
+        },[selectedCombo]
+    );
 
     return (
         <div className='c-plans-and-prices'>
