@@ -1,0 +1,1 @@
+export type Material_type = 'madeira' | 'plástico' | 'Mármore';
