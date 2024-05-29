@@ -1,0 +1,1 @@
+export type Campo_type = string | undefined;
