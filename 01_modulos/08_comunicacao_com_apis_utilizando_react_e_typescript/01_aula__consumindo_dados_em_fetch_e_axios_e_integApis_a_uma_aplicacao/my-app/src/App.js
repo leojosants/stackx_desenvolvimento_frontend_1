@@ -14,7 +14,7 @@ function App() {
 
       Object.keys(dogsList).forEach(async (breed) => {
         try {
-          const { data: { message: breedImage } } = await axios.get(`https://dog.ceo/api/breed/${breed}/images/randos`)
+          const { data: { message: breedImage } } = await axios.get(`https://dog.ceo/api/breed/${breed}/images/random`)
 
           const breedItem = {
             breed, image: breedImage
